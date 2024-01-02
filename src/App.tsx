@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import './styles/App.css';
+import Profile from './components/profile';
+import Header from './components/header';
+import Experience from './components/experience';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeSection, setActiveSection] = useState<string>('home');
+
+  const scrollToSection = (section: string) => {
+    setActiveSection(section);
+  };
+
+  useEffect(() => {
+    // Scroll to the active section when it changes
+    const element = document.getElementById(activeSection);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [activeSection]);
+
+  const experiences = [
+    {
+      title: 'Software Developer',
+      company: 'Example Company',
+      location: 'City, Country',
+      startDate: 'January 2020',
+      endDate: 'Present',
+      description: 'Worked on various projects using React and Node.js.',
+    },    {
+      title: 'Software Developer',
+      company: 'Example Company',
+      location: 'City, Country',
+      startDate: 'January 2020',
+      endDate: 'Present',
+      description: 'Worked on various projects using React and Node.js.',
+    },    {
+      title: 'Software Developer',
+      company: 'Example Company',
+      location: 'City, Country',
+      startDate: 'January 2020',
+      endDate: 'Present',
+      description: 'Worked on various projects using React and Node.js.',
+    },
+    // Add more experiences as needed
+  ];
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header scrollToSection={scrollToSection} />
+      <Profile />
+      <div id="about">About Section Content</div>
+      <div id="skills">Skills Section Content</div>
+      <div id="education">Education Section Content</div>
+      <div id="work">Work Section Content</div>
+      <div id="experience">
+        <Experience experiences={experiences} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div id="contact">Contact Section Content</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

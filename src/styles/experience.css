@@ -1,0 +1,20 @@
+.experience {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .experience-item {
+    position: relative;
+    padding: 20px;
+    border-left: 2px solid #3498db;
+    margin-bottom: 20px;
+  }
+  
+  .experience-item h3 {
+    margin-top: 0;
+  }
+  
+  .experience-item p {
+    margin: 5px 0;
+  }
+  
