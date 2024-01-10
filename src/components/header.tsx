@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
 
   return (
     <div className="header home">
-      <button onClick={() => handleLinkClick('home')}>Homie</button>
+      <button onClick={() => handleLinkClick('home')}>Homiie</button>
       <button onClick={() => handleLinkClick('about')}>About</button>
       <button onClick={() => handleLinkClick('skills')}>Skills</button>
       <button onClick={() => handleLinkClick('education')}>Education</button>
