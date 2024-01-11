@@ -18,6 +18,9 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
       <button onClick={() => handleLinkClick('work')}>Work</button>
       <button onClick={() => handleLinkClick('experience')}>Experience</button>
       <button onClick={() => handleLinkClick('contact')}>Contact</button>
+
+      <a href='./output.rar'>letoltes</a>
+
     </div>
   );
 };
