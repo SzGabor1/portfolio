@@ -6,6 +6,9 @@ import Experience from './components/experience';
 import Skills from './components/skills';
 import ProjectCarousel from './components/projects';
 
+import mejpg from './assets/me.jpg';
+import kerijpg from './assets/keri.jpg';
+
 function App() {
   const [activeSection, setActiveSection] = useState<string>('home');
 
@@ -90,36 +93,36 @@ function App() {
     {
       title: 'Project 1',
       description:  'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/me.jpg',
+      image: mejpg,
     },
     {
       title: 'Project 2',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/keri.jpg',
+      image: mejpg,
     },    {
       title: 'Project 3',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/keri.jpg',
+      image: kerijpg,
     },    {
       title: 'Project 4',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/keri.jpg',
+      image: kerijpg,
     },    {
       title: 'Project 5',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/keri.jpg',
+      image: kerijpg,
     },    {
       title: 'Project 6',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/keri.jpg',
+      image: mejpg,
     },    {
       title: 'Project 7',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/keri.jpg',
+      image: kerijpg,
     },    {
       title: 'Project 8',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '../assets/keri.jpg',
+      image: kerijpg,
     },
   ];
 
