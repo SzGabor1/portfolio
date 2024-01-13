@@ -14,10 +14,10 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
       <button onClick={() => handleLinkClick('home')}>Home</button>
       <button onClick={() => handleLinkClick('about')}>About</button>
       <button onClick={() => handleLinkClick('skills')}>Skills</button>
-      <button onClick={() => handleLinkClick('education')}>Education</button>
-      <button onClick={() => handleLinkClick('work')}>Work</button>
       <button onClick={() => handleLinkClick('experience')}>Experience</button>
+      <button onClick={() => handleLinkClick('projects')}>Projects</button>
       <button onClick={() => handleLinkClick('contact')}>Contact</button>
+
     </div>
   );
 };
