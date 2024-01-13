@@ -90,28 +90,36 @@ function App() {
     {
       title: 'Project 1',
       description:  'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: 'src/assets/me.jpg',
+      image: '../assets/me.jpg',
     },
     {
       title: 'Project 2',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: 'src/assets/keri.jpg',
+      image: '../assets/keri.jpg',
     },    {
-      title: 'Project 2',
+      title: 'Project 3',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: 'src/assets/keri.jpg',
+      image: '../assets/keri.jpg',
     },    {
-      title: 'Project 2',
+      title: 'Project 4',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: 'src/assets/keri.jpg',
+      image: '../assets/keri.jpg',
     },    {
-      title: 'Project 2',
+      title: 'Project 5',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: 'src/assets/keri.jpg',
+      image: '../assets/keri.jpg',
     },    {
-      title: 'Project 2',
+      title: 'Project 6',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: 'src/assets/keri.jpg',
+      image: '../assets/keri.jpg',
+    },    {
+      title: 'Project 7',
+      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '../assets/keri.jpg',
+    },    {
+      title: 'Project 8',
+      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '../assets/keri.jpg',
     },
   ];
 
