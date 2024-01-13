@@ -28,8 +28,9 @@
     }
 
     .slick-next{
-        display: none;
+     display: none !important ;
     }
+
 
   }
   
