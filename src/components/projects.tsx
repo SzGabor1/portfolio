@@ -4,6 +4,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import '../styles/projects.css';
+
 interface Project {
   title: string;
   description: string;
@@ -19,17 +21,28 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Update this to display three projects at a time
+    slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
     <Slider {...settings}>
       {projects.map((project, index) => (
-        <div key={index}>
+        <div key={index} className="project-slide">
           <h2>{project.title}</h2>
           <p>{project.description}</p>
-          <img src={project.image} alt={project.title} />
+          <img
+            src={project.image}
+            alt={project.title}
+/>
         </div>
       ))}
     </Slider>
