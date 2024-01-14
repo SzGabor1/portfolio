@@ -1,18 +1,86 @@
 /* Import your slick-carousel styles here */
 
 /* Add your global styles (if any) here */
+#projects{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.slick-slide {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 60%;
+}
+/* 
+.slick-active{  max-width: 60%;}
+
+.slick-current{  max-width: 60%;} */
 
 .project-slide {
-    text-align: center;
-  }
+  margin: 0 auto;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 90%;
+  position: relative; /* To handle shadow with hover */
+
+  border: 5px solid #000000;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease; /* Adding smooth transition for the hover effect */
+}
+
+.project-slide:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+}
+
+/* Additional styling for hover effect */
+.project-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-slide:hover::before {
+  opacity: 1;
+}
   
   .project-slide h2 {
     margin-bottom: 10px;
   }
-  
-  
+  .project-slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  /* .slick-next{
+    display: none !important;
+  }
+  .slick-prev{
+    display: none !important;
+  }
+   */
   /* Responsive styles */
   @media (max-width: 768px) {
+    #projects{
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+
+
     .project-slide{
         width: 100%;
         justify-content: center;
@@ -22,14 +90,21 @@
         margin: 0 auto;
 
     }
+    .slick-slide {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 60%;
+    }
 
     .project-slide img {
       width: 90%;
     }
-
     .slick-next{
-     display: none !important ;
-    }
+    display: none !important;
+  }
+  .slick-prev{
+    display: none !important;
+  }
 
 
   }

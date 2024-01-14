@@ -34,6 +34,10 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
   };
 
   return (
+    <div className="project-carousel">
+    <h2>
+      Projects
+    </h2>
     <Slider {...settings}>
       {projects.map((project, index) => (
         <div key={index} className="project-slide">
@@ -46,6 +50,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
         </div>
       ))}
     </Slider>
+    </div>
   );
 };
 

@@ -132,16 +132,6 @@ function App() {
       <Header scrollToSection={scrollToSection} />
       <Profile />
       <div id="about">About Section Content
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat exercitationem autem beatae, reprehenderit maxime eum. Quidem maiores officiis, consectetur optio excepturi accusantium, numquam molestias, dolorem laboriosam magni non quaerat facilis!
-      Debitis quidem expedita laboriosam adipisci libero quia est consequatur maiores veritatis mollitia voluptatum vitae, cupiditate rerum similique saepe! Voluptas tenetur laboriosam dolorum laudantium nam. Ullam consectetur blanditiis aut sunt perferendis!
-      Eaque, deleniti? Debitis omnis ipsam fuga consectetur corporis illum saepe iusto a sapiente temporibus facere veniam, ad ut inventore recusandae! Voluptas temporibus quidem explicabo ea molestiae maiores itaque, repellendus maxime.
-      Eaque dolore, ab sunt aut tempora laudantium velit nesciunt id. A incidunt dignissimos, fugit accusantium expedita quos iure fugiat vitae ipsum tempora eaque, optio veniam praesentium eveniet totam quam! Doloremque.
-      Aperiam eaque blanditiis qui minus aut? Enim autem eum possimus, saepe quaerat ratione expedita iusto, consectetur nemo, suscipit similique quod iure quisquam distinctio? Voluptates porro rerum incidunt placeat cumque et.
-      Distinctio ab, id modi culpa quas quidem beatae dolorum quis a, architecto voluptatum laboriosam facilis doloribus quasi autem illo at, magnam itaque voluptatem suscipit expedita! Ducimus ab quasi id nulla?
-      Similique quam quisquam minima nobis facere, quis accusamus repudiandae sint beatae officia assumenda? Dolorem omnis soluta nihil sint recusandae saepe unde, rem, modi distinctio hic, sapiente quos earum maiores quod.
-      Architecto eum dolorem hic dolorum beatae possimus inventore. Pariatur nostrum velit ipsam, veritatis adipisci iusto necessitatibus quas sapiente corrupti, ad eum ipsum iste hic itaque deleniti tenetur vel in totam.
-      Nulla, id alias ipsa rerum quia, eos porro molestias obcaecati consectetur corrupti tempore cumque aperiam qui quas animi adipisci dolor rem laborum. Dolorum nemo veniam tempore aliquam accusamus, ducimus possimus.
-      Ullam magnam cupiditate at voluptatibus perspiciatis qui temporibus officiis voluptatum vitae consequatur, laudantium nostrum veritatis! Porro quod culpa, assumenda, ad tenetur vero voluptatem magnam libero praesentium non pariatur animi sunt?
       </div>
       <div id="skills">
         <Skills />

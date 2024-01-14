@@ -1,7 +1,7 @@
 html {
-width: 100vw;
+  width: 99vw;
 height: 100vh;
-background-color: grey;
+background-color: #242424;
 }
 body {
 margin: 0;
