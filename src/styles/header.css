@@ -1,32 +1,105 @@
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
+header {
+  background: #fff;
+  width: 70%;
+  margin: 1.5rem auto;
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  transition: .5s;
+  height: 60px;
+  position: relative;
+}
+.header-text p {
+  font-size: 1.3rem;
+  margin: 0;
+  padding:0;
+}
+header ul {
+  display: flex;
+  gap:2.5rem;
+  list-style: none;
+  padding:0rem;
+  margin: 0;
+}
+header ul li {
+  font-size: 1.1rem;
+  position: relative;
+  transition: .3s;
+}
+header ul li:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgb(33, 150, 243);
+  height: 2px;
+  transition: .3s;
+  width: 0;
+}
+header ul li:hover:before {
+  width: 100%;
+  transition: .3s;
+}
+header ul li:hover {
+  cursor: pointer;
+  color:rgb(33, 150, 243);
+  transition: .3s;
+}
+.open {
+ margin-left: auto;
+ font-size: 1.5rem;
+ display: none;
+}
+.close {
+  display: none;
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+.open:hover, .close:hover {
+  cursor: pointer;
+}
+.show-nav {
+  transform: translateY(0%);
+  transition: .3s;
+}
+@media(max-width:1136px) {
+  header {
+    width: 90%;
+    transition: .5s;
   }
-  
-  .header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+}
+@media(max-width:882px) {
+  .open, .close {
+    display: block;
   }
-  
-  .header a:hover {
-    border-bottom: 2px solid white;
+  header ul {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    padding:2rem 2rem;
+    border-radius: 12px;
+    transform: translateY(-120%);
+    transition: .3s;
+    animation: .0001s menu forwards;
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
+  @keyframes menu {
+    0% {
+        display: none;
     }
-  
-    .header a {
-      margin: 5px 0;
-      display: block;
+    100% {
+        display: block;
     }
+}
+  header ul li {
+    margin:1rem 0rem;
   }
-  
+  header ul li:hover:before {
+    width: 0;
+    transition: .3s;
+  }
+}

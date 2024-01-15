@@ -1,111 +1,57 @@
-/* Import your slick-carousel styles here */
-
-/* Add your global styles (if any) here */
-#projects{
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
+.projects-container {
+    margin: 0 auto;
+    width: 80%;
 }
-
-
-
-.slick-slide {
-  margin: 0 auto;
-  text-align: center;
-  max-width: 60%;
+.projects-container h2 {
+    color:#fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin:3rem 0rem 2rem 0rem; 
 }
-/* 
-.slick-active{  max-width: 60%;}
-
-.slick-current{  max-width: 60%;} */
-
-.project-slide {
-  margin: 0 auto;
-
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 90%;
-  position: relative; /* To handle shadow with hover */
-
-  border: 5px solid #000000;
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease; /* Adding smooth transition for the hover effect */
+.project-content {
+    margin: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    color: #fff;
 }
-
-.project-slide:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+.project-content p {
+    padding: 0rem 2rem 1rem 2rem;
 }
-
-/* Additional styling for hover effect */
-.project-slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.project-content img {
+    width: 90%;
+    margin-bottom: 1.5rem;
+    height: 250px;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
 }
-
-.project-slide:hover::before {
-  opacity: 1;
+.slick-prev:before, .slick-next:before {
+    font-size: 2.5rem;
+    color:rgba(0, 0, 0, 0.9);
 }
-  
-  .project-slide h2 {
-    margin-bottom: 10px;
-  }
-  .project-slide img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  /* .slick-next{
-    display: none !important;
-  }
-  .slick-prev{
-    display: none !important;
-  }
-   */
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    #projects{
-      width: 80%;
-      text-align: center;
-      margin: 0 auto;
+.slick-prev {
+    left: -42px;
+}
+.slick-dots li button:before {
+    color:#fff;
+    font-size: 10px;
+}
+.slick-dots li.slick-active button:before {
+    color:royalblue;
+}
+@media (max-width: 1178px) {
+    .slick-prev, .slick-next {
+        display: none !important;
     }
-
-
-
-    .project-slide{
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-
+    .project-content img  {
+        height: 250px;
     }
-    .slick-slide {
-      margin: 0 auto;
-      text-align: center;
-      max-width: 60%;
+}
+@media(max-width:768px) {
+    .project-content {
+        margin: 0;
     }
-
-    .project-slide img {
-      width: 90%;
-    }
-    .slick-next{
-    display: none !important;
-  }
-  .slick-prev{
-    display: none !important;
-  }
-
-
-  }
-  
+}

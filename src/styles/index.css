@@ -1,13 +1,12 @@
-html {
-  width: 99vw;
-height: 100vh;
-background-color: #242424;
+* {
+  box-sizing: border-box;
 }
 body {
 margin: 0;
 padding: 0;
 width: 100%;
 height: 100%;
+background-color: #242424;
 }
 
 #root {
@@ -15,7 +14,6 @@ width: 100%;
 height: 100%;
 margin: 0;
 padding: 0;
-
 }
 
 /* :root {

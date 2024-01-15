@@ -134,10 +134,10 @@ function App() {
       <div id="about">About Section Content
       </div>
       <div id="skills">
-        <Skills />
+        {<Skills />}
       </div>
       <div id="experience">
-        <Experience experiences={experiences} />
+        {<Experience experiences={experiences} />}
       </div>
       <div id="projects">
          <ProjectCarousel projects={projects} />

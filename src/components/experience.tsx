@@ -4,6 +4,8 @@ import {FaCode } from 'react-icons/fa';
 import { IoSchool } from "react-icons/io5";
 import 'react-vertical-timeline-component/style.min.css';
 
+import "../styles/experience.css"
+
 interface ExperienceProps {
   experiences: {
     type: string;
