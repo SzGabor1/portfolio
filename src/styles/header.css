@@ -86,6 +86,7 @@ header ul li:hover {
     transform: translateY(-120%);
     transition: .3s;
     animation: .0001s menu forwards;
+    z-index: 999;
   }
   @keyframes menu {
     0% {
@@ -96,7 +97,7 @@ header ul li:hover {
     }
 }
   header ul li {
-
+    
   }
   header ul li:hover:before {
     width: 0;
