@@ -99,6 +99,7 @@ header ul li:hover {
   header ul li {
     background-color: red;
     margin: 0 !important;
+    margin-bottom: 2rem;
     padding: 0 !important;
   }
   header ul li:hover:before {
