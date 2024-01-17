@@ -81,7 +81,7 @@ header ul li:hover {
     background: #fff;
     width: 100%;
     flex-direction: column;
-    padding:2rem 2rem;
+
     border-radius: 12px;
     transform: translateY(-120%);
     transition: .3s;
