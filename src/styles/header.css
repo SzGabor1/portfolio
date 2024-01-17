@@ -97,7 +97,7 @@ header ul li:hover {
     }
 }
   header ul li {
-    
+    background-color: red;
   }
   header ul li:hover:before {
     width: 0;
