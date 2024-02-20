@@ -16,17 +16,15 @@ gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
   const skillsData = {
     Python: <FaPython />,
-    Java: <FaJava />,
-    C: 'C',
     SQL: <SiMysql />,
     HTML: <FaHtml5 />,
     CSS: <FaCss3 />,
-    UCMDB: 'UCMDB',
-    'Office 365': <SiMicrosoftoffice />,
+    C: 'C',
+    Java: <FaJava />,
+    Git: <FaGit />,
     React: <FaReact />,
     FastAPI: <SiFastapi />,
-    Pygame: 'Pygame',
-    Git: <FaGit />,
+    'Office 365': <SiMicrosoftoffice />,
   };
 
   const skillsRef = useRef<HTMLDivElement>(null);
