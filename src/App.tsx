@@ -5,6 +5,7 @@ import Header from './components/header';
 import Experience from './components/experience';
 import Skills from './components/skills';
 import ProjectCarousel from './components/projects';
+import About from './components/about';
 
 import mejpg from './assets/me.jpg';
 import kerijpg from './assets/keri.jpg';
@@ -130,8 +131,9 @@ function App() {
   return (
     <>
       <Header scrollToSection={scrollToSection} />
+      <div id="about">
+      <About />
       <Profile />
-      <div id="about">About Section Content
       </div>
       <div id="skills">
         {<Skills />}

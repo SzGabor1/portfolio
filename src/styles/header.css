@@ -1,5 +1,6 @@
 header {
-  background: #395B64;
+  background: #9d9fa0;
+  /* background: #80b0dd; */
   width: 70%;
   margin: 1.5rem auto;
   padding: 0rem 2rem;
@@ -34,7 +35,7 @@ header ul li:before {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgb(33, 150, 243);
+  background: #3498db;
   height: 2px;
   transition: .3s;
   width: 0;
@@ -45,7 +46,7 @@ header ul li:hover:before {
 }
 header ul li:hover {
   cursor: pointer;
-  color:rgb(33, 150, 243);
+  color:#3498db;
   transition: .3s;
 }
 .open {
