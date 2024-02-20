@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{ useEffect, useRef } from 'react';
 import Slider from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import '../styles/projects.css';
+
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 
 interface Project {
   title: string;
@@ -17,6 +23,32 @@ interface ProjectCarouselProps {
 }
 
 const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
+  const projectsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (projectsRef.current) {
+      const elements = projectsRef.current.querySelectorAll('.project-slide');
+
+      elements.forEach((element) => {
+        gsap.fromTo(
+          element,
+          { opacity: 0, scale: 0.8 },
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 0.5,
+            scrollTrigger: {
+              trigger: element,
+              start: 'top 90%',
+            },
+          }
+        );
+      });
+    }
+  }, []);
+
+
+
   const settings = {
     dots: true,
     infinite: true,
@@ -40,7 +72,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
   };
 
   return (
-    <div className="projects-container">
+    <div className="projects-container" ref={projectsRef}>
       <h2>Projects</h2>
       <Slider {...settings}>
         {projects.map((project, index) => (

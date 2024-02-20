@@ -32,8 +32,6 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
         <nav>
           <ul className={`${navClass}`}>
             <AiOutlineClose className="close" onClick={handleNavToggleClick}/>
-            <li onClick={() => handleLinkClick('home')}>Home</li>
-            <li onClick={() => handleLinkClick('about')}>About</li>
             <li onClick={() => handleLinkClick('skills')}>Skills</li>
             <li onClick={() => handleLinkClick('experience')}>Experience</li>
             <li onClick={() => handleLinkClick('projects')}>Projects</li>
@@ -41,14 +39,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
           </ul>
         </nav>
       </header>
-      {/*
-      <button onClick={() => handleLinkClick('home')}>Home</button>
-      <button onClick={() => handleLinkClick('about')}>About</button>
-      <button onClick={() => handleLinkClick('skills')}>Skills</button>
-      <button onClick={() => handleLinkClick('experience')}>Experience</button>
-      <button onClick={() => handleLinkClick('projects')}>Projects</button>
-      <button onClick={() => handleLinkClick('contact')}>Contact</button>
-  */}
+
     </div>
   );
 };

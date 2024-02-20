@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 import '../styles/skills.css';
 import { FaPython, FaJava, FaHtml5, FaCss3, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiMysql, SiMicrosoftoffice, SiFastapi } from "react-icons/si";
 import { TbBrandCoinbase } from "react-icons/tb";
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
