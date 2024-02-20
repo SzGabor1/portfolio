@@ -1,6 +1,7 @@
 .skills {
     margin: 20px;
     text-align: center;
+    color: #ffff;
   }
   
   .skills_title {
@@ -33,6 +34,7 @@
     height: 80px;
     border-radius: 50%;
     border: 5px solid rgb(33, 150, 243);
+    font-size: 30px;
   }
 
   

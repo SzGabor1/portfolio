@@ -2,27 +2,31 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import '../styles/skills.css';
-
+import { FaPython } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { SiMicrosoftoffice } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
+import { FaGit } from "react-icons/fa";
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
   const skillsData = {
-    Python: 'Python',
-    Java: 'Java',
-    JavaScript: 'JavaScript',
+    Python: <FaPython />,
+    Java: <FaJava />,
     C: 'C',
-    SQL: 'SQL',
-    HTML: 'HTML',
-    CSS: 'CSS',
-    PHP: 'PHP',
+    SQL: <SiMysql />,
+    HTML: <FaHtml5 />,
+    CSS: <FaCss3 />,
     UCMDB: 'UCMDB',
-    Photoshop: 'Photoshop',
-    'Office 365': 'Office 365',
-    React: 'React',
-    'Node.js': 'Node.js',
-    FastAPI: 'FastAPI',
+    'Office 365': <SiMicrosoftoffice />,
+    React: <FaReact />,
+    FastAPI: <SiFastapi />,
     Pygame: 'Pygame',
-    Bootstrap: 'Bootstrap',
+    Git: <FaGit />,
   };
 
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -59,7 +63,7 @@ const Skills = () => {
         <div className="prog_languages">
           <h3>Programming languages</h3>
           <ul>
-            {(Object.keys(skillsData) as Array<keyof typeof skillsData>).slice(0, 8).map((skill) => (
+            {(Object.keys(skillsData) as Array<keyof typeof skillsData>).slice(0, 6).map((skill) => (
               <li key={skill} className="progress-bar-container">
                 {skillsData[skill]}
               </li>
@@ -69,7 +73,7 @@ const Skills = () => {
         <div className="other_skills">
           <h3>Apps, Frameworks, libraries</h3>
           <ul>
-            {(Object.keys(skillsData) as Array<keyof typeof skillsData>).slice(8).map((skill) => (
+            {(Object.keys(skillsData) as Array<keyof typeof skillsData>).slice(6).map((skill) => (
               <li key={skill} className="progress-bar-container">
                 {skillsData[skill]}
               </li>
