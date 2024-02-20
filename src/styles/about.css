@@ -9,16 +9,23 @@
   }
   
   .profile_image {
-    flex: 0 0 auto; /* Let the image grow or shrink as needed */
+    flex: 0 0 auto;
   }
   
   .about p {
-    flex: 1 1 auto; /* Let the paragraph grow or shrink as needed */
+    color: #ffff;
+    flex: 1 1 auto;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+  }
+
+  .about h1 {
+    color: #ffff;
+    font-size: 2.5rem;
+    margin: 0;
   }
   
   @media (max-width: 768px) {
