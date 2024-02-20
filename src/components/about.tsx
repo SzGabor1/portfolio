@@ -3,6 +3,7 @@ import '../styles/about.css';
 const About = () => {
   return (
     <div className="about">
+
         <h1>About Me</h1>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti porro facere unde, praesentium amet quidem. Quasi quam, veritatis, maiores repellendus nulla ipsam iusto quo eaque voluptatibus modi architecto id omnis.

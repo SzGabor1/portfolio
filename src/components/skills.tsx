@@ -11,6 +11,7 @@ import { SiMicrosoftoffice } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiFastapi } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
+import { TbBrandCoinbase } from "react-icons/tb";
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
@@ -19,7 +20,7 @@ const Skills = () => {
     SQL: <SiMysql />,
     HTML: <FaHtml5 />,
     CSS: <FaCss3 />,
-    C: 'C',
+    C: <TbBrandCoinbase />,
     Java: <FaJava />,
     Git: <FaGit />,
     React: <FaReact />,

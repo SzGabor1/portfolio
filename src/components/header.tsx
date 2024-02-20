@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
     <div className="header home">
       <header>
         <div className="header-text">
-          <p>Szendrei Gábor</p>
+          <p>Portfolio</p>
         </div>
         <CgMenuLeft className="open" onClick={handleNavToggleClick}/>
         <nav>

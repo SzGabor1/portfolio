@@ -131,6 +131,9 @@ function App() {
   return (
     <>
       <Header scrollToSection={scrollToSection} />
+      <div className= 'title'>
+        <h1>Szendrei Gábor</h1>
+      </div>
       <div id="about">
       <About />
       <Profile />
