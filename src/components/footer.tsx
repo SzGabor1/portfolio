@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import '../styles/footer.css';
+import emailjs from '@emailjs/browser';
 const Footer: React.FC = () => {
   return (
     <footer>

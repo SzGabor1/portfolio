@@ -22,6 +22,10 @@
     .footer-content {
         flex-direction: column;
         height: 100%;
+        justify-content: center;
+    }
+    .footer-left{
+        margin-top: 100px;
     }
 }
 
