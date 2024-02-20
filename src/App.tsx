@@ -7,8 +7,9 @@ import Skills from './components/skills';
 import ProjectCarousel from './components/projects';
 import About from './components/about';
 import Footer from './components/footer';
-import mejpg from './assets/me.jpg';
-import kerijpg from './assets/keri.jpg';
+import msjpg from './assets/ms.jpg';
+import blogjpg from './assets/blog.jpg';
+import wcjpg from './assets/wc.jpg';
 
 function App() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -92,39 +93,19 @@ function App() {
 
   const projects = [
     {
-      title: 'Project 1',
+      title: 'Marooned Sailor',
       description:  'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: mejpg,
+      image: msjpg,
     },
     {
-      title: 'Project 2',
+      title: 'Dev Blog',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: mejpg,
+      image: blogjpg,
     },    {
-      title: 'Project 3',
+      title: 'Worktime Calculator',
       description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: kerijpg,
-    },    {
-      title: 'Project 4',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: kerijpg,
-    },    {
-      title: 'Project 5',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: kerijpg,
-    },    {
-      title: 'Project 6',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: mejpg,
-    },    {
-      title: 'Project 7',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: kerijpg,
-    },    {
-      title: 'Project 8',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: kerijpg,
-    },
+      image: wcjpg,
+    }
   ];
 
 
@@ -132,7 +113,7 @@ function App() {
     <>
       <Header scrollToSection={scrollToSection} />
       <div className= 'title'>
-        <h1>Szendrei Gábor</h1>
+        <h1>Gábor Szendrei</h1>
       </div>
       <div id="about">
       <About />

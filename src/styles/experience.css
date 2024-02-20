@@ -14,6 +14,10 @@
   .experience-item h3 {
     margin-top: 0;
   }
+  .experience h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
   
   .experience-item p {
     margin: 5px 0;

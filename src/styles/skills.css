@@ -13,7 +13,10 @@
     flex-wrap: wrap;
   }
   
-  
+  .skills h2 {
+    font-size: 2.5rem;
+  }
+
   .skills_content h3 {
     font-size: 18px;
   }
