@@ -1,0 +1,122 @@
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    height: 500px;
+}
+.footer-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background:url('../assets/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:654px) {
+    .footer-content {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 1rem;
+}
+.footer-left a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+
+.footer-right{
+    margin-top: 100px;
+}
+
+
+.inputfield {
+    position: relative;
+}
+.inputfield label {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    transition: .3s;
+    pointer-events: none;
+    color: #fff;
+}
+.inputfield input {
+    height: 32px;
+    width: 300px;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+    font-size: 1rem;
+}
+.inputfield input:focus {
+    outline: none;
+}
+.inputfield input:focus ~ label, .inputfield input:valid ~ label {
+    top: -23px;
+    transition: .3s;
+    font-size: 0.9rem;
+}
+.inputfield textarea {
+    resize: none;
+    height: 32px;
+    width: 300px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    line-height: 1.2rem;
+    color:#fff;
+    font-size: 0.9rem;
+    transition: .5s;
+}
+.inputfield textarea:focus ~ label, .inputfield textarea:valid ~ label {
+    top: -23px;
+    transition: .3s;
+    font-size: 0.9rem;
+}
+.inputfield textarea:focus, .inputfield textarea:valid {
+    outline: none;
+    height: 120px;
+    transition: .5s;
+}
+.inputfield-button button {
+    border: none;
+    background: #3498db;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: .3s;
+    font-size: 1rem;
+}
+.inputfield-button button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    transition: .3s;
+    
+}
+
+.email {
+    margin-bottom: 2rem;
+}
+
+.name {
+    margin-bottom: 2rem;
+}
