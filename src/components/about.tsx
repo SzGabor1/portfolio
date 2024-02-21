@@ -5,10 +5,8 @@ const About = () => {
     <div className="about">
 
         <h2>About Me</h2>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti porro facere unde, praesentium amet quidem. Quasi quam, veritatis, maiores repellendus nulla ipsam iusto quo eaque voluptatibus modi architecto id omnis.
-            Aliquid natus nihil distinctio reiciendis beatae nulla illum cum magnam alias sint velit, quia provident numquam, praesentium autem, animi exercitationem dicta placeat omnis. Incidunt eligendi quia odit cum quaerat laborum.
-        </p>
+        <p>I am Gábor Szendrei, currently studying Software Information Technology BSC at the University of Miskolc and i'm a trainee at Hungarian National Tax and Customs Administration.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia autem tempore eius omnis facere voluptatibus. Porro, aliquid? Dolores saepe repudiandae facere aperiam iste pariatur alias autem. Maxime, ratione modi.</p>
     </div>
 
   );

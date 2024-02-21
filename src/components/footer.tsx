@@ -48,6 +48,7 @@ const Footer: React.FC = () => {
             <a href="https://www.instagram.com/szendrei__gabor" target='_blank'><FaInstagram /></a>
         </div>
         <div className='footer-right'>
+            <h2>Contact me</h2>
             <form onSubmit={handleSubmit}>
                 <div className="inputfield name">
                 <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} required></input>

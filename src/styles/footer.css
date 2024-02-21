@@ -51,6 +51,9 @@
 .footer-right{
     margin-top: 100px;
 }
+.footer-right h2{
+    color: #fff;
+}
 
 
 .inputfield {
