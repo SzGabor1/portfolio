@@ -10,6 +10,7 @@ import Footer from './components/footer';
 import msjpg from './assets/ms.jpg';
 import blogjpg from './assets/blog.jpg';
 import wcjpg from './assets/wc.jpg';
+import sanifpng from './assets/sanif.png';
 
 function App() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -94,17 +95,21 @@ function App() {
   const projects = [
     {
       title: 'Marooned Sailor',
-      description:  'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description:  'Marooned Sailor is a 2D platformer game, where the player has to escape from a deserted island. The game is written in Python, and it uses the Pygame library. The game has a simple design. The game has an account system and able to save the highscores.',
       image: msjpg,
     },
     {
       title: 'Dev Blog',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'I had to write weekly reports of the Marooned Sailor game and I decided to create a blog for it. The blog is written in React and it has a simple design. The blog is able to display the posts and it has a search function witch can filter the posts by the title, post date, and content aswell.',
       image: blogjpg,
     },    {
       title: 'Worktime Calculator',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'This small app was made to calculate the worktime of my friend. The app is written in Python, and it has a simple GUI. The app is able to calculate the worktime, and it can also save the data to a file.',
       image: wcjpg,
+    },    {
+      title: 'SAN switch interface',
+      description: "I've made an interface for SAN switches. The interface is written in Python, and it's using REST API to communicate with the switches. The interface is able to discover the switches, and upload the CIs and connections to the uCMDB.",
+      image: sanifpng,
     }
   ];
 
