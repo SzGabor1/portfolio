@@ -34,24 +34,24 @@ function App() {
       location: 'Miskolc',
       startDate: '2022',
       endDate: 'present',
-      description: 'I am currently studying at the University of Miskolc, where I am studying software information technology. I am currently in the 3rd semester of my studies. I am interested in the field of software development, so I am constantly learning new things. I am currently learning the basics of web development, and I am also interested in the field of artificial intell',
+      description: 'I am currently studying at the University of Miskolc, where I am studying software information technology. I am currently in the 3rd semester of my studies. My thesis is a 2D action-adventure game, which I developed in Python using Pygame libary.',
     },    {
       type: 'work',
-      title: 'UCMDB developer, Python scripter',
-      company: 'National Tax and Customs Administration.',
+      title: 'Intern',
+      company: 'National Tax and Customs Administration. - Hungary',
       location: 'Miskolc',
       startDate: '10.2023',
       endDate: 'present',
-      description: 'Exploring the server infrastructure of virtual environments.      Network infrastructure reconnaissance.      Programmatically addressing discovered devices through specific protocols.   Establishing interfaces between monitoring devices and the reconnaissance tool.',
+      description: "I'm assisting in the exploration of network infrastructure through uCMDB, as well as contributing to the creation of various views and reports based on data. Additionally, I'm involved in establishing interfaces between uCMDB and unsupported devices using Python and REST API.",
     },
     {
       type: 'work',
-      title: 'Python developer',
+      title: 'Intership',
       company: 'Amtech rendszerház kft.',
       location: 'Budapest',
       startDate: '09.2023',
       endDate: '06.2023',
-      description: 'I spent my internship at Amtech Rendszerház Kft., where I worked on pygame-based gamedevelopment. During the project, I used MySQL database, FastAPI framework and Pythonbase libraries. With the help of my experience, I managed to create an interactive game,which I will present as a thesis.',
+      description: 'I spent my internship at Amtech Rendszerház Kft., where I worked on pygame-based game development. During the project, I used MySQL database, FastAPI framework and other Pythonbased libraries. With the help of my experience, I managed to create an interactive game, which I will present as a thesis.',
     },
     {
       type: 'work',
@@ -66,10 +66,10 @@ function App() {
       type: 'work',
       title: 'Warehouse worker',
       company: 'Italkereskedő-ház zrt.',
-      location: 'City, Country',
+      location: 'Sárospatak',
       startDate: '07.2019',
       endDate: '09.2019',
-      description: 'Storage, movement, warehouse placement of goods, physical loading and unloadingonto/from trucks. Participation in customer service. Receiving orders, checking theirquantity and quality.'
+      description: 'My job involved handling storage, movement, and warehouse placement of goods, as well as physically loading and unloading onto/from trucks. Additionally, I actively participated in customer service by receiving orders and meticulously checking their quantity and quality.'
     },
     {
       type: 'school',
@@ -78,7 +78,7 @@ function App() {
       location: 'Sátoraljaújhely',
       startDate: '2017',
       endDate: '2021',
-      description: 'I graduated from Szent István Katolikus Technikum és Gimnázium in 2021. I studied in the field of information technology. During my studies, I learned the basics of programming, webdevelopment, and I also learned the basics of computer networks and hardware.'
+      description: 'I graduated from Szent István Katolikus Technikum és Gimnázium in 2021. I studied in the field of information technology. During my studies, I learned the basics of programming, webdevelopment, and I also learned about computer networks and hardware.'
     },
     {
       type: 'work',
@@ -104,11 +104,11 @@ function App() {
       image: blogjpg,
     },    {
       title: 'Worktime Calculator',
-      description: 'This small app was made to calculate the worktime of my friend. The app is written in Python, and it has a simple GUI. The app is able to calculate the worktime, and it can also save the data to a file.',
+      description: "This application was created to calculate my friend's work hours. It is programmed in Python and features a straightforward graphical user interface. Not only can the application compute work hours, but it can also store the data in a file.",
       image: wcjpg,
     },    {
       title: 'SAN switch interface',
-      description: "I've made an interface for SAN switches. The interface is written in Python, and it's using REST API to communicate with the switches. The interface is able to discover the switches, and upload the CIs and connections to the uCMDB.",
+      description: "I've made an interface for SAN switches. The interface was written in Python, and it's using REST API to communicate with the switches. The interface is able to discover the brocade SAN switches, and upload the CIs and connections to the uCMDB.",
       image: sanifpng,
     }
   ];

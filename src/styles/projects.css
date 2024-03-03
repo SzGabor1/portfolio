@@ -16,6 +16,7 @@
     align-items: center;
     border-radius: 1rem;
     color: #fff;
+    height: 600px;
 }
 .project-content p {
     padding: 0rem 2rem 1rem 2rem;
@@ -53,5 +54,7 @@
 @media(max-width:768px) {
     .project-content {
         margin: 0;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }

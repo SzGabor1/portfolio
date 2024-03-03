@@ -32,8 +32,15 @@
     #about {
       flex-direction: column;
       align-items: center;
-      text-align: center;
+      text-align: center; 
       width: 90%;
     }
+    .about h2{
+      text-align: left;
+    }
+    .about p{
+      text-align: left;
+    }
+
   }
   
