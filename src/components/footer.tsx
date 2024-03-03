@@ -43,10 +43,14 @@ const Footer: React.FC = () => {
     <footer>
       <div className='footer-content'>
         <div className="footer-left">
+        <div className="links">
             <a href="https://github.com/SzGabor1" target='_blank'><FaGithub /></a>
             <a href="https://www.linkedin.com/in/g%C3%A1bor-szendrei-0ab027298/" target='_blank'><FaLinkedin /></a>
             <a href="https://www.instagram.com/szendrei__gabor" target='_blank'><FaInstagram /></a>
         </div>
+        <span>gabor.szendrei1@gmail.com</span>
+     </div>
+
         <div className='footer-right'>
             <h2>Contact me</h2>
             <form onSubmit={handleSubmit}>
@@ -56,7 +60,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="inputfield email">
-                <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required></input>
+                <input id="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} required></input>
                 <label htmlFor='email'>Email</label>
 
                 </div>

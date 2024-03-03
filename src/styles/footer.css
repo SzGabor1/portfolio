@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgb(30,32,34);
     height: 500px;
 }
 .footer-content:before {
@@ -37,14 +37,21 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    gap: 1rem;
+
+    flex-direction: column;
 
 }
 .footer-left a {
     color: #fff;
     text-decoration: none;
     margin: 0 auto;
+    margin-left:10px;
     font-size: 35px;
+}
+
+.footer-left span {
+    color: #fff;
+    margin: 0 auto;
 }
 
 
