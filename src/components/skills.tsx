@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import '../styles/skills.css';
-import { FaPython, FaJava, FaHtml5, FaCss3, FaReact, FaGitAlt } from "react-icons/fa";
-import { SiMysql, SiMicrosoftoffice, SiFastapi } from "react-icons/si";
+import { FaPython, FaJava, FaHtml5, FaCss3, FaReact, FaGitAlt,FaFigma  } from "react-icons/fa";
+import { SiMysql, SiMicrosoftoffice, SiFastapi,SiDjango  } from "react-icons/si";
 import { TbBrandCoinbase } from "react-icons/tb";
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -18,6 +18,8 @@ const Skills = () => {
     Git: <FaGitAlt />,
     React: <FaReact />,
     FastAPI: <SiFastapi />,
+    Django: <SiDjango />,
+    Figma: <FaFigma />,
     'Office 365': <SiMicrosoftoffice />,
   };
 

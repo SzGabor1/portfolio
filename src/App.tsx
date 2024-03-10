@@ -11,6 +11,7 @@ import msjpg from './assets/ms.jpg';
 import blogjpg from './assets/blog.jpg';
 import wcjpg from './assets/wc.jpg';
 import sanifpng from './assets/sanif.png';
+import projectcpng from './assets/projectc.png';
 
 function App() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -110,6 +111,10 @@ function App() {
       title: 'SAN switch interface',
       description: "I've made an interface for SAN switches. The interface was written in Python, and it's using REST API to communicate with the switches. The interface is able to discover the brocade SAN switches, and upload the CIs and connections to the uCMDB.",
       image: sanifpng,
+    },    {
+      title: 'Project C',
+      description: "This game was developed as part of a Software Technology course. Me and three friends collaborated to create a 2D adventure game using Java and AlmasB's FXGL library. The focus of the course was on documentation, we also decided to developing the game.",
+      image: projectcpng,
     }
   ];
 

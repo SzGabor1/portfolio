@@ -1,6 +1,7 @@
 import '../styles/profile.css';
 const IMAGES = {
-    image1 : new URL('../assets/profile_pics.png', import.meta.url).href
+
+    image1 : new URL('../assets/Profile.png', import.meta.url).href
 }
 
 const Profile = () => {
