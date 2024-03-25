@@ -35,7 +35,7 @@ function App() {
       location: 'Budapest',
       startDate: '03.2024',
       endDate: '',
-      desctiption: "I have successfully passed the International English Language Test with an average score of 6. Although I believe I could have performed better, I am proud of this achievement.",
+      description: "I have successfully passed the International English Language Test with an average score of 6. Although I believe I could have performed better, I am proud of this achievement.",
     },
     {
       type: 'school',
