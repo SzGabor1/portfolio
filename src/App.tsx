@@ -30,6 +30,15 @@ function App() {
   const experiences = [
     {
       type: 'school',
+      title: 'International English Language Testing System',
+      company: 'British Council',
+      location: 'Budapest',
+      startDate: '03.2024',
+      endDate: '',
+      desctiption: "I have successfully passed the International English Language Test with an average score of 6. Although I believe I could have performed better, I am proud of this achievement."
+    },
+    {
+      type: 'school',
       title: 'University of Miskolc',
       company: 'Software Information Technology BSc.',
       location: 'Miskolc',
