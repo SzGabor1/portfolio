@@ -35,15 +35,15 @@ function App() {
       location: 'Budapest',
       startDate: '03.2024',
       endDate: '',
-      desctiption: "I have successfully passed the International English Language Test with an average score of 6. Although I believe I could have performed better, I am proud of this achievement."
+      desctiption: "I have successfully passed the International English Language Test with an average score of 6. Although I believe I could have performed better, I am proud of this achievement.",
     },
     {
       type: 'school',
       title: 'University of Miskolc',
       company: 'Software Information Technology BSc.',
       location: 'Miskolc',
-      startDate: '2022',
-      endDate: 'present',
+      startDate: '09-2022',
+      endDate: '06-2024',
       description: 'I am currently studying at the University of Miskolc, where I am studying software information technology. I am currently in the 3rd semester of my studies. My thesis is a 2D action-adventure game, which I developed in Python using Pygame libary.',
     },    {
       type: 'work',
