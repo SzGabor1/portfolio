@@ -105,11 +105,11 @@ function App() {
 
   const projects = [
     {
-      title: 'Barber Shop',
+      title: 'Barber Shop - WIP',
       description: 'Appointbent booking system for a barber shop. The backend was written in Python using Django framework, frontend was written in React TypeScipt. The users are able to register, book appointments (select Employee, Service, Date from a week-view datepicker, time).',
       image: barbershoppng,
       gitrepo: 'https://github.com/SzGabor1/barbershop',
-      demo: 'https://szgabor-dev.hu/',
+      demo: 'https://barbershop.szgabor-dev.hu/',
     },
     {
       title: 'Marooned Sailor',
@@ -122,7 +122,6 @@ function App() {
       description: 'I had to write weekly reports of the Marooned Sailor game and I decided to create a blog for it. The blog is written in React and it has a simple design. The blog is able to display the posts and it has a search function witch can filter the posts by the title, post date, and content aswell.',
       image: blogjpg,
       gitrepo: 'https://github.com/SzGabor1/DevBlog',
-      demo: 'https://szgabor-dev.hu/',
     },    {
       title: 'Worktime Calculator',
       description: "This Python application was designed to calculate my friend's work hours with ease. Sporting a simple graphical user interface, it offers straightforward functionality. Beyond just computing work hours, the application also allows for data storage in a file, adding to its practicality.",
