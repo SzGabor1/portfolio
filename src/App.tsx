@@ -12,6 +12,7 @@ import blogjpg from './assets/blog.jpg';
 import wcjpg from './assets/wc.jpg';
 import sanifpng from './assets/sanif.png';
 import projectcpng from './assets/projectc.png';
+import barbershoppng from './assets/barbershop.png';
 
 function App() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -104,18 +105,29 @@ function App() {
 
   const projects = [
     {
+      title: 'Barber Shop',
+      description: 'Appointbent booking system for a barber shop. The backend was written in Python using Django framework, frontend was written in React TypeScipt. The users are able to register, book appointments (select Employee, Service, Date from a week-view datepicker, time).',
+      image: barbershoppng,
+      gitrepo: 'https://github.com/SzGabor1/barbershop',
+      demo: 'https://szgabor-dev.hu/',
+    },
+    {
       title: 'Marooned Sailor',
       description:  'Marooned Sailor is a 2D platformer game, where the player has to escape from a deserted island. The game is written in Python, and it uses the Pygame library. The game has a simple design. The game has an account system and able to save the highscores.',
       image: msjpg,
+      gitrepo: 'https://github.com/SzGabor1/pygame-ms',
     },
     {
       title: 'Dev Blog',
       description: 'I had to write weekly reports of the Marooned Sailor game and I decided to create a blog for it. The blog is written in React and it has a simple design. The blog is able to display the posts and it has a search function witch can filter the posts by the title, post date, and content aswell.',
       image: blogjpg,
+      gitrepo: 'https://github.com/SzGabor1/DevBlog',
+      demo: 'https://szgabor-dev.hu/',
     },    {
       title: 'Worktime Calculator',
-      description: "This application was created to calculate my friend's work hours. It is programmed in Python and features a straightforward graphical user interface. Not only can the application compute work hours, but it can also store the data in a file.",
+      description: "This Python application was designed to calculate my friend's work hours with ease. Sporting a simple graphical user interface, it offers straightforward functionality. Beyond just computing work hours, the application also allows for data storage in a file, adding to its practicality.",
       image: wcjpg,
+      gitrepo: 'https://github.com/SzGabor1/WorktimeCalculator',
     },    {
       title: 'SAN switch interface',
       description: "I've made an interface for SAN switches. The interface was written in Python, and it's using REST API to communicate with the switches. The interface is able to discover the brocade SAN switches, and upload the CIs and connections to the uCMDB.",
@@ -124,6 +136,7 @@ function App() {
       title: 'Project C',
       description: "This game was developed as part of a Software Technology course. Me and three friends collaborated to create a 2D adventure game using Java and AlmasB's FXGL library. The focus of the course was on documentation, we also decided to developing the game.",
       image: projectcpng,
+      gitrepo: 'https://github.com/MinimalistPeach/szofttechProjekt',
     }
   ];
 

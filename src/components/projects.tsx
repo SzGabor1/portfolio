@@ -1,4 +1,4 @@
-import React,{ useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,13 +9,12 @@ import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-
-
-
 interface Project {
   title: string;
   description: string;
   image: string;
+  gitrepo?: string;
+  demo?: string;
 }
 
 interface ProjectCarouselProps {
@@ -46,8 +45,6 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
       });
     }
   }, []);
-
-
 
   const settings = {
     dots: true,
@@ -80,10 +77,20 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <img
-                src={project.image}
-                alt={project.title}
-              />
+              <img src={project.image} alt={project.title} />
+            <div className="links">
+
+              {project.gitrepo && project.gitrepo !== "" && (
+                <a className="repo" href={project.gitrepo} target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              )}
+              {project.demo && project.demo !== "" && (
+                <a className="demo" href={project.demo} target="_blank" rel="noopener noreferrer">
+                  Demo
+                </a>
+              )}
+              </div>
             </div>
           </div>
         ))}
