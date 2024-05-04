@@ -1,11 +1,11 @@
 kind: pipeline
-name: deploy barbershop
+name: deploy portfolio
 
 steps:
-- name: build and deploy barbershop
+- name: build and deploy portfolio
   image: docker
   commands:
-  - docker-compose -p barbershop up --build -d
+  - docker-compose -p portfolio up --build -d
   volumes:
   - name: docker_sock
     path: /var/run/docker.sock
