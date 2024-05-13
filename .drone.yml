@@ -2,10 +2,10 @@ kind: pipeline
 name: deploy portfolio
 
 steps:
-- name: build react app
+- name: build and deploy portfolio
   image: docker
   commands:
-  - docker-compose up --build -d
+  - docker-compose -p portfolio up --build -d
   volumes:
   - name: docker_sock
     path: /var/run/docker.sock
