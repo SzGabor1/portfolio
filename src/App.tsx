@@ -135,7 +135,6 @@ function App() {
       title: 'Project C',
       description: "This game was developed as part of a Software Technology course. Me and three friends collaborated to create a 2D adventure game using Java and AlmasB's FXGL library. The focus of the course was on documentation, we also decided to developing the game.",
       image: projectcpng,
-      gitrepo: 'https://github.com/MinimalistPeach/szofttechProjekt',
     }
   ];
 
